@@ -1,5 +1,8 @@
 <html>
   <head>
+
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -70,6 +73,16 @@
           </div>
       
           <!-- Pending Appointments -->
+
+<!-- <div id="appointments" class="w-full mt-6"> -->
+<!--   <h2 class="text-[#111811] text-lg font-semibold leading-tight mb-4"> -->
+<!--     Dates NEW -->
+<!--   </h2> -->
+<!--   <ul class="list-disc list-inside text-[#638863] text-base font-normal leading-normal"> -->
+<!--     <!-- Las citas se generarán aquí -->
+<!--   </ul> -->
+<!-- </div> -->
+
           <div class="w-full mt-6">
             <h2 class="text-[#111811] text-lg font-semibold leading-tight mb-4">
             Dates 
@@ -96,5 +109,57 @@
        
        
        
+
+<!-- <script> -->
+<!--   // Array de citas -->
+<!--   const appointments = [ -->
+<!--     { -->
+<!--       title: "Go to a Park", -->
+<!--       description: "Reminder to take Firulais to a park", -->
+<!--       date: "12/02/2024", -->
+<!--       time: "18:26", -->
+<!--       image: "https://tse1.mm.bing.net/th?id=OIP.gS4jw2vJFoVWz7tdB3E82gHaFj&pid=Api", -->
+<!--     }, -->
+<!--     { -->
+<!--       title: "Vet Appointment", -->
+<!--       description: "Regular check-up at the vet", -->
+<!--       date: "15/03/2024", -->
+<!--       time: "10:00", -->
+<!--       image: "https://tse1.mm.bing.net/th?id=OIP.4bLD6Hie8Iu5Nx1MFG4MjAHaEK&pid=Api", -->
+<!--     }, -->
+<!--     { -->
+<!--       title: "Dog Training", -->
+<!--       description: "Behavioral training session", -->
+<!--       date: "20/04/2024", -->
+<!--       time: "14:30", -->
+<!--       image: "https://tse1.mm.bing.net/th?id=OIP.3i7NyLffC5P-TkwUuLfwngHaEo&pid=Api", -->
+<!--     }, -->
+<!--   ]; -->
+<!---->
+<!--   // Contenedor de citas -->
+<!--   const appointmentsContainer = document.querySelector("#appointments ul"); -->
+<!---->
+<!--   // Generar contenido dinámico -->
+<!--   appointments.forEach((appointment) => { -->
+<!--     const appointmentElement = ` -->
+<!--       <div class="flex items-center gap-4 bg-white px-4 min-h-[72px] py-2 justify-between"> -->
+<!--         <div class="flex items-center gap-4"> -->
+<!--           <div -->
+<!--             class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-fit" -->
+<!--             style='background-image: url("${appointment.image}");' -->
+<!--           ></div> -->
+<!--           <div class="flex flex-col justify-center"> -->
+<!--             <p class="text-[#111811] text-base font-medium leading-normal line-clamp-1">${appointment.title}</p> -->
+<!--             <p class="text-[#638863] text-sm font-normal leading-normal line-clamp-2">${appointment.description}</p> -->
+<!--           </div> -->
+<!--         </div> -->
+<!--         <div class="shrink-0"> -->
+<!--           <p class="text-[#638863] text-sm font-normal leading-normal">${appointment.date} -> ${appointment.time}</p> -->
+<!--         </div> -->
+<!--       </div> -->
+<!--     `; -->
+<!--     appointmentsContainer.insertAdjacentHTML("beforeend", appointmentElement); -->
+<!--   }); -->
+<!-- </script> -->
   </body>
 </html>

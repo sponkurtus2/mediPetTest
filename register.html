@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MediPet - Iniciar Sesión</title>
+    <title>MediPet - Create Account</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -17,12 +17,21 @@
     <div class="relative flex size-full min-h-screen flex-col justify-center items-center" style='font-family: Manrope, "Noto Sans", sans-serif;'>
       <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl border border-[#638863]/20 p-8 transform transition-all hover:scale-105">
         <div class="text-center mb-8">
-          <h2 class="text-[#2c5e2c] text-3xl font-extrabold mb-2">MediPet</h2>
-          <p class="text-[#638863] text-sm">Take care of your pets with love</p>
+          <h2 class="text-[#2c5e2c] text-3xl font-extrabold mb-2">Create Account</h2>
+          <p class="text-[#638863] text-sm">Start your pet care journey</p>
         </div>
         <form class="space-y-6">
           <div>
-            <label for="email" class="block text-sm font-medium text-[#2c5e2c] mb-2">Email</label>
+            <label for="fullName" class="block text-sm font-medium text-[#2c5e2c] mb-2">Full Name</label>
+            <input 
+              type="text" 
+              id="fullName" 
+              required 
+              class="w-full px-4 py-3 border-2 border-[#638863]/30 rounded-xl bg-[#f0f4f0] focus:outline-none focus:ring-2 focus:ring-[#2c5e2c] transition duration-300"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-[#2c5e2c] mb-2">Email Address</label>
             <input 
               type="email" 
               id="email" 
@@ -39,18 +48,27 @@
               class="w-full px-4 py-3 border-2 border-[#638863]/30 rounded-xl bg-[#f0f4f0] focus:outline-none focus:ring-2 focus:ring-[#2c5e2c] transition duration-300"
             />
           </div>
+          <div>
+            <label for="confirmPassword" class="block text-sm font-medium text-[#2c5e2c] mb-2">Confirm Password</label>
+            <input 
+              type="password" 
+              id="confirmPassword" 
+              required 
+              class="w-full px-4 py-3 border-2 border-[#638863]/30 rounded-xl bg-[#f0f4f0] focus:outline-none focus:ring-2 focus:ring-[#2c5e2c] transition duration-300"
+            />
+          </div>
           <button 
             type="submit" 
-            onclick="window.location.href='mainpage.html'; return false;"
+            onclick="window.location.href='index.html'; return false;"
             class="w-full bg-[#2c5e2c] text-white py-3 rounded-xl hover:bg-[#1e421e] transition duration-300 shadow-md hover:shadow-lg"
           >
-           Login 
+            Create Account
           </button>
         </form>
         <div class="text-center mt-6">
           <p class="text-sm text-[#638863]">
-            Dont have an account yet? 
-            <a href="register.html" class="text-[#2c5e2c] font-bold hover:underline">Register here</a>
+            Already have an account? 
+            <a href="index.html" class="text-[#2c5e2c] font-bold hover:underline">Log In</a>
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <html>
   <head>
- <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
     <link
       rel="stylesheet"
@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
     />
 
-    <title>Galileo Design</title>
+    <title>MediPet</title>
     <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
@@ -25,112 +25,268 @@
               class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#111811] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
             >
               <div class="text-[#111811]" data-icon="Gear" data-size="24px" data-weight="regular">
-              
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" fill="currentColor">
+                  <path d="M216,130.16V125.84l16-16V80l-32-8-8-32H152l-16,16h-5.84L130.16,40H109.84L96,56H80L48,88v21.84L64,125.84v4.32L48,130.16V152l32,8,8,32h21.84L152,216h21.84l13.76-16H216l8-32-16-16ZM128,88a40,40,0,1,1-40,40A40,40,0,0,1,128,88Z"></path>
+                </svg>
               </div>
             </button>
           </div>
         </div>
-        <div class="flex items-center gap-4 bg-white px-4 py-3">
-            <a href="service.html">
-          <div
-            class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
-            style='background-image: url("https://cdn.usegalileo.ai/stability/ac0fd25c-c4d2-4c63-9f41-d47118f00a45.png");'
-          ></div>
-</a>
-          <div class="flex flex-col justify-center">
-            <p class="text-[#111811] text-base font-medium leading-normal line-clamp-1">Barkingham Palace</p>
-            <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">Dog grooming service</p>
+
+        <div class="px-4 py-3 bg-[#f7f9f7]">
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-lg font-bold text-[#111811]">Explore Veterinary Services</h2>
+            <div class="flex items-center space-x-2">
+              <button 
+                aria-label="Filter services" 
+                class="p-2 bg-[#638864]/10 rounded-full hover:bg-[#638864]/20 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" fill="currentColor">
+                  <path d="M200,128a8,8,0,0,1-8,8H64a8,8,0,0,1,0-16H192A8,8,0,0,1,200,128ZM64,72H192a8,8,0,0,0,0-16H64a8,8,0,0,0,0,16Zm128,112H64a8,8,0,0,0,0,16H192a8,8,0,0,0,0-16Z"></path>
+                </svg>
+              </button>
+              <button 
+                aria-label="Search services" 
+                class="p-2 bg-[#638864]/10 rounded-full hover:bg-[#638864]/20 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" fill="currentColor">
+                  <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.32,11.32l50.06,50.07a8,8,0,0,0,11.33-11.33ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          
+          <div class="relative mb-4">
+            <input 
+              type="search" 
+              placeholder="Search veterinary services" 
+              aria-label="Search veterinary services"
+              class="w-full px-4 py-2 border border-[#f0f4f0] rounded-xl bg-white text-[#111811] focus:ring-2 focus:ring-[#638864]/50 transition-all"
+            />
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              width="20" 
+              height="20" 
+              fill="#638864" 
+              class="absolute right-4 top-1/2 transform -translate-y-1/2"
+              viewBox="0 0 256 256"
+            >
+              <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.32,11.32l50.06,50.07a8,8,0,0,0,11.33-11.33ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+            </svg>
           </div>
         </div>
-        <p class="text-[#638864] text-sm font-normal leading-normal pb-3 pt-1 px-4">$$$$</p>
-        <div class="flex items-center gap-4 bg-white px-4 py-3">
-            <a href="service2.html">
-          <div
-            class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
-            style='background-image: url("https://cdn.usegalileo.ai/sdxl10/5d6b9a0d-18b1-481a-a940-67e5880d2d0b.png");'
-          ></div>
-</a>
-          <div class="flex flex-col justify-center">
-            <p class="text-[#111811] text-base font-medium leading-normal line-clamp-1">SIT Social: Dog Training &amp; Daycare</p>
-            <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">Dog training service</p>
+
+        <div class="space-y-4 px-4">
+          <div 
+            class="flex items-center gap-4 bg-white shadow-sm rounded-xl p-3 border border-[#f0f4f0] hover:shadow-md transition-all"
+            aria-label="Barkingham Palace - Dog Grooming Service"
+            tabindex="0"
+          >
+            <a href="service.html" class="flex-shrink-0">
+              <div
+                class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
+                style='background-image: url("https://cdn.usegalileo.ai/stability/ac0fd25c-c4d2-4c63-9f41-d47118f00a45.png");'
+                aria-hidden="true"
+              ></div>
+            </a>
+            <div class="flex-grow">
+              <h3 class="text-[#111811] text-base font-medium leading-normal line-clamp-1">Barkingham Palace</h3>
+              <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">
+                Professional Dog Grooming Service
+              </p>
+            </div>
+            <div class="flex-shrink-0 text-[#638864] font-medium text-sm">
+              $$$$
+            </div>
+          </div>
+
+          <div 
+            class="flex items-center gap-4 bg-white shadow-sm rounded-xl p-3 border border-[#f0f4f0] hover:shadow-md transition-all"
+            aria-label="SIT Social: Dog Training & Daycare"
+            tabindex="0"
+          >
+            <a href="service2.html" class="flex-shrink-0">
+              <div
+                class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/5d6b9a0d-18b1-481a-a940-67e5880d2d0b.png");'
+                aria-hidden="true"
+              ></div>
+            </a>
+            <div class="flex-grow">
+              <h3 class="text-[#111811] text-base font-medium leading-normal line-clamp-1">
+                SIT Social: Dog Training & Daycare
+              </h3>
+              <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">
+                Comprehensive Dog Training Program
+              </p>
+            </div>
+            <div class="flex-shrink-0 text-[#638864] font-medium text-sm">
+              $$$$
+            </div>
+          </div>
+
+          <div 
+            class="flex items-center gap-4 bg-white shadow-sm rounded-xl p-3 border border-[#f0f4f0] hover:shadow-md transition-all"
+            aria-label="Biscuits and Bath, Upper West Side"
+            tabindex="0"
+          >
+            <a href="service3.html" class="flex-shrink-0">
+              <div
+                class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
+                style='background-image: url("https://cdn.usegalileo.ai/stability/e8e1d41a-1e5c-429c-92c0-a17ad5cb739d.png");'
+                aria-hidden="true"
+              ></div>
+            </a>
+            <div class="flex-grow">
+              <h3 class="text-[#111811] text-base font-medium leading-normal line-clamp-1">Biscuits and Bath</h3>
+              <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">
+                Premium Pet Boarding Service
+              </p>
+            </div>
+            <div class="flex-shrink-0 text-[#638864] font-medium text-sm">
+              $$$$
+            </div>
+          </div>
+
+          <div 
+            class="flex items-center gap-4 bg-white shadow-sm rounded-xl p-3 border border-[#f0f4f0] hover:shadow-md transition-all"
+            aria-label="VCA San Francisco Veterinary Specialists"
+            tabindex="0"
+          >
+            <a href="service4.html" class="flex-shrink-0">
+              <div
+                class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
+                style='background-image: url("https://cdn.usegalileo.ai/stability/ad58c128-f3eb-4158-8ff8-414b4c4b7fa2.png");'
+                aria-hidden="true"
+              ></div>
+            </a>
+            <div class="flex-grow">
+              <h3 class="text-[#111811] text-base font-medium leading-normal line-clamp-1">VCA San Francisco</h3>
+              <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">
+                Advanced Veterinary Care
+              </p>
+            </div>
+            <div class="flex-shrink-0 text-[#638864] font-medium text-sm">
+              $$$$
+            </div>
+          </div>
+
+          <div 
+            class="flex items-center gap-4 bg-white shadow-sm rounded-xl p-3 border border-[#f0f4f0] hover:shadow-md transition-all"
+            aria-label="Happy Hound Pet Services"
+            tabindex="0"
+          >
+            <a href="service5.html" class="flex-shrink-0">
+              <div
+                class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
+                style='background-image: url("https://cdn.usegalileo.ai/sdxl10/de20cf06-cfe6-4350-a839-0d41234dbce0.png");'
+                aria-hidden="true"
+              ></div>
+            </a>
+            <div class="flex-grow">
+              <h3 class="text-[#111811] text-base font-medium leading-normal line-clamp-1">Happy Hound</h3>
+              <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">
+                Professional Pet Boarding
+              </p>
+            </div>
+            <div class="flex-shrink-0 text-[#638864] font-medium text-sm">
+              $$$$
+            </div>
           </div>
         </div>
-        <p class="text-[#638864] text-sm font-normal leading-normal pb-3 pt-1 px-4">$$$$</p>
-        <div class="flex items-center gap-4 bg-white px-4 py-3">
-            <a href="service3.html">
-          <div
-            class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
-            style='background-image: url("https://cdn.usegalileo.ai/stability/e8e1d41a-1e5c-429c-92c0-a17ad5cb739d.png");'
-          ></div>
-</a>
-          <div class="flex flex-col justify-center">
-            <p class="text-[#111811] text-base font-medium leading-normal line-clamp-1">Biscuits and Bath, Upper West Side</p>
-            <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">Pet boarding service</p>
-          </div>
-        </div>
-        <p class="text-[#638864] text-sm font-normal leading-normal pb-3 pt-1 px-4">$$$$</p>
-        <div class="flex items-center gap-4 bg-white px-4 py-3">
-          <a href="service4.html">
-          <div
-            class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
-            style='background-image: url("https://cdn.usegalileo.ai/stability/ad58c128-f3eb-4158-8ff8-414b4c4b7fa2.png");'
-          ></div>
-</a>
-          <div class="flex flex-col justify-center">
-            <p class="text-[#111811] text-base font-medium leading-normal line-clamp-1">VCA San Francisco Veterinary Specialists</p>
-            <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">Veterinarian</p>
-          </div>
-        </div>
-        <p class="text-[#638864] text-sm font-normal leading-normal pb-3 pt-1 px-4">$$$$</p>
-        <div class="flex items-center gap-4 bg-white px-4 py-3">
-          <a href="service5.html">
-          <div
-            class="bg-center bg-no-repeat aspect-video bg-cover rounded-lg h-14 w-fit"
-            style='background-image: url("https://cdn.usegalileo.ai/sdxl10/de20cf06-cfe6-4350-a839-0d41234dbce0.png");'
-          ></div>
-</a>
-          <div class="flex flex-col justify-center">
-            <p class="text-[#111811] text-base font-medium leading-normal line-clamp-1">Happy Hound</p>
-            <p class="text-[#638864] text-sm font-normal leading-normal line-clamp-2">Pet boarding service</p>
-          </div>
-        </div>
-        <p class="text-[#638864] text-sm font-normal leading-normal pb-3 pt-1 px-4">$$$$</p>
       </div>
-      <div>
-        <div class="flex gap-2 border-t border-[#f0f4f0] bg-white px-4 pb-3 pt-2">
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#638864]" href="index.html">
-            <div class="text-[#638864] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"
-                ></path>
-              </svg>
+
+        <div>
+        <div>
+          <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+            <div class="flex justify-around items-center py-3 px-4 max-w-md mx-auto relative">
+              <div class="absolute bottom-0 left-0 w-1/3 h-1 bg-[#2a442a] rounded-t-full transition-all duration-300 ease-in-out transform translate-x-0"></div>
+              
+              <a 
+                href="mainpage.html" 
+                class="group flex flex-col items-center justify-center transition-colors duration-200 ease-in-out relative z-10" 
+                aria-label="Home"
+              >
+                <div class="mb-1 transition-transform group-hover:scale-105">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    fill="currentColor" 
+                    viewBox="0 0 256 256"
+                    class="text-[#111811] group-[.active]:text-[#2a442a]"
+                  >
+                    <path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+                  </svg>
+                </div>
+                <span 
+                  class="text-xs font-medium text-[#111811] group-hover:text-[#2a442a] transition-colors"
+                >
+                 Home 
+                </span>
+              </a>
+      
+              <a 
+                href="explore.html" 
+                class="group flex flex-col items-center justify-center transition-colors duration-200 ease-in-out relative z-10" 
+                aria-label="Explorar"
+              >
+                <div class="mb-1 transition-transform group-hover:scale-105">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    fill="currentColor" 
+                    viewBox="0 0 256 256"
+                    class="text-[#638864] group-[.active]:text-[#3a5c3a]"
+                  >
+                    <path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"></path>
+                  </svg>
+                </div>
+                <span 
+                  class="text-xs font-medium text-[#638864] group-hover:text-[#3a5c3a] transition-colors"
+                >
+                  Explore
+                </span>
+              </a>
+      
+              <a 
+                href="profile.html" 
+                class="group flex flex-col items-center justify-center transition-colors duration-200 ease-in-out relative z-10" 
+                aria-label="Perfil"
+              >
+                <div class="mb-1 transition-transform group-hover:scale-105">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    fill="currentColor" 
+                    viewBox="0 0 256 256"
+                    class="text-[#638864] group-[.active]:text-[#3a5c3a]"
+                  >
+                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"></path>
+                  </svg>
+                </div>
+                <span 
+                  class="text-xs font-medium text-[#638864] group-hover:text-[#3a5c3a] transition-colors"
+                >
+                  Profile
+                </span>
+              </a>
             </div>
-            <p class="text-[#638864] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#111811]" href="#">
-            <div class="text-[#111811] flex h-8 items-center justify-center" data-icon="MagnifyingGlass" data-size="24px" data-weight="fill">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M168,112a56,56,0,1,1-56-56A56,56,0,0,1,168,112Zm61.66,117.66a8,8,0,0,1-11.32,0l-50.06-50.07a88,88,0,1,1,11.32-11.31l50.06,50.06A8,8,0,0,1,229.66,229.66ZM112,184a72,72,0,1,0-72-72A72.08,72.08,0,0,0,112,184Z"
-                ></path>
-              </svg>
-            </div>
-            <p class="text-[#111811] text-xs font-medium leading-normal tracking-[0.015em]">Explore</p>
-          </a>
-          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#638864]" href="profile.html">
-            <div class="text-[#638864] flex h-8 items-center justify-center" data-icon="User" data-size="24px" data-weight="regular">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                <path
-                  d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
-                ></path>
-              </svg>
-            </div>
-            <p class="text-[#638864] text-xs font-medium leading-normal tracking-[0.015em]">Profile</p>
-          </a>
+          </nav>
         </div>
-        <div class="h-5 bg-white"></div>
       </div>
-    </div>
-  </body>
+      
+
+      <script>
+        document.querySelectorAll('nav a').forEach((link, index) => {
+  link.addEventListener('click', () => {
+    const indicator = document.querySelector('nav div div div:first-child');
+    indicator.style.transform = `translateX(${index * 100}%)`;
+  });
+});
+      </script>
+        </body>
 </html>
+

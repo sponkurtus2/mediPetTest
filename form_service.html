@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediPet - Book a Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white font-sans min-h-screen">
+    <div class="relative flex flex-col min-h-screen bg-white">
+        <!-- Header -->
+        <div class="flex items-center bg-white p-4 pb-2 justify-between">
+            <h2 class="text-[#111811] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pl-12">
+                Book a Service
+            </h2>
+        </div>
+
+        <!-- Form Container -->
+        <form class="px-4 py-6 space-y-6">
+            <!-- Service Selection -->
+            <div>
+                <h3 class="text-[#111811] text-base font-medium mb-4">Select Service</h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <button type="button" class="flex flex-col items-center p-4 rounded-lg border-2 border-gray-200 bg-white hover:border-[#2a442a] hover:bg-[#f0f4f0] transition-all">
+                        <span class="text-3xl mb-2">🐕</span>
+                        <span class="text-sm text-[#111811]">Dog Walking</span>
+                    </button>
+                    <button type="button" class="flex flex-col items-center p-4 rounded-lg border-2 border-gray-200 bg-white hover:border-[#2a442a] hover:bg-[#f0f4f0] transition-all">
+                        <span class="text-3xl mb-2">🩺</span>
+                        <span class="text-sm text-[#111811]">Veterinarians</span>
+                    </button>
+                    <button type="button" class="flex flex-col items-center p-4 rounded-lg border-2 border-gray-200 bg-white hover:border-[#2a442a] hover:bg-[#f0f4f0] transition-all">
+                        <span class="text-3xl mb-2">🏠</span>
+                        <span class="text-sm text-[#111811]">Pet Sitting</span>
+                    </button>
+                    <button type="button" class="flex flex-col items-center p-4 rounded-lg border-2 border-gray-200 bg-white hover:border-[#2a442a] hover:bg-[#f0f4f0] transition-all">
+                        <span class="text-3xl mb-2">🐾</span>
+                        <span class="text-sm text-[#111811]">Pet Training</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pet Name Input -->
+            <div>
+                <label for="petName" class="block text-[#111811] text-base font-medium mb-2">
+                    Pet Name
+                </label>
+                <input
+                    id="petName"
+                    type="text"
+                    class="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-[#2a442a] transition-colors"
+                    placeholder="Enter your pet's name"
+                    required
+                >
+            </div>
+
+            <!-- Date and Time Selection -->
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label for="serviceDate" class="block text-[#111811] text-base font-medium mb-2">
+                        Date
+                    </label>
+                    <input
+                        id="serviceDate"
+                        type="date"
+                        class="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-[#2a442a] transition-colors"
+                        required
+                    >
+                </div>
+                <div>
+                    <label for="serviceTime" class="block text-[#111811] text-base font-medium mb-2">
+                        Time
+                    </label>
+                    <input
+                        id="serviceTime"
+                        type="time"
+                        class="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-[#2a442a] transition-colors"
+                        required
+                    >
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+        <a href="mainpage.html"> 
+            <button
+                type="submit"
+                class="w-full bg-[#2a442a] text-white py-4 rounded-lg hover:bg-[#3a5c3a] transition-colors"
+            >
+                Book Service
+            </button>
+</a>
+        </form>
+
+        <!-- Bottom Navigation -->
+      <div>
+        <div>
+          <nav class="fixed bottom-0 left-0 right-0 z-50 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+            <div class="flex justify-around items-center py-3 px-4 max-w-md mx-auto relative">
+              <div class="absolute bottom-0 left-0 w-1/3 h-1 bg-[#2a442a] rounded-t-full transition-all duration-300 ease-in-out transform translate-x-0"></div>
+              
+              <a 
+                href="mainpage.html" 
+                class="group flex flex-col items-center justify-center transition-colors duration-200 ease-in-out relative z-10" 
+                aria-label="Home"
+              >
+                <div class="mb-1 transition-transform group-hover:scale-105">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    fill="currentColor" 
+                    viewBox="0 0 256 256"
+                    class="text-[#111811] group-[.active]:text-[#2a442a]"
+                  >
+                    <path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+                  </svg>
+                </div>
+                <span 
+                  class="text-xs font-medium text-[#111811] group-hover:text-[#2a442a] transition-colors"
+                >
+                 Home 
+                </span>
+              </a>
+      
+              <a 
+                href="explore.html" 
+                class="group flex flex-col items-center justify-center transition-colors duration-200 ease-in-out relative z-10" 
+                aria-label="Explorar"
+              >
+                <div class="mb-1 transition-transform group-hover:scale-105">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    fill="currentColor" 
+                    viewBox="0 0 256 256"
+                    class="text-[#638864] group-[.active]:text-[#3a5c3a]"
+                  >
+                    <path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"></path>
+                  </svg>
+                </div>
+                <span 
+                  class="text-xs font-medium text-[#638864] group-hover:text-[#3a5c3a] transition-colors"
+                >
+                  Explore
+                </span>
+              </a>
+      
+              <a 
+                href="profile.html" 
+                class="group flex flex-col items-center justify-center transition-colors duration-200 ease-in-out relative z-10" 
+                aria-label="Perfil"
+              >
+                <div class="mb-1 transition-transform group-hover:scale-105">
+                  <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    width="24" 
+                    height="24" 
+                    fill="currentColor" 
+                    viewBox="0 0 256 256"
+                    class="text-[#638864] group-[.active]:text-[#3a5c3a]"
+                  >
+                    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"></path>
+                  </svg>
+                </div>
+                <span 
+                  class="text-xs font-medium text-[#638864] group-hover:text-[#3a5c3a] transition-colors"
+                >
+                  Profile
+                </span>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

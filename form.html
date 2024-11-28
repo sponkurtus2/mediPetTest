@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MediPet - Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-[#e6f2e6] to-[#c5e1c5] font-sans">
+    <div class="relative flex size-full min-h-screen flex-col justify-center items-center" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+      <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl border border-[#638863]/20 p-8 transform transition-all hover:scale-[1.02]">
+        <div class="text-center mb-8">
+          <h2 class="text-[#2c5e2c] text-3xl font-extrabold mb-2">Get in touch with us</h2>
+        </div>
+        <form class="space-y-6">
+          <div>
+            <label for="petName" class="block text-sm font-medium text-[#2c5e2c] mb-2">Your name</label>
+            <input 
+              type="text" 
+              id="petName" 
+              required 
+              class="w-full px-4 py-3 border-2 border-[#638863]/30 rounded-xl bg-[#f0f4f0] focus:outline-none focus:ring-2 focus:ring-[#2c5e2c] transition duration-300"
+            />
+          </div>
+          <div>
+            <label for="petLocation" class="block text-sm font-medium text-[#2c5e2c] mb-2">Your email</label>
+            <input 
+              type="text" 
+              id="petLocation" 
+              required 
+              class="w-full px-4 py-3 border-2 border-[#638863]/30 rounded-xl bg-[#f0f4f0] focus:outline-none focus:ring-2 focus:ring-[#2c5e2c] transition duration-300"
+            />
+          </div>
+          <div>
+            <label for="petLikes" class="block text-sm font-medium text-[#2c5e2c] mb-2">What is your problem?</label>
+            <textarea 
+              id="petLikes" 
+              rows="3"
+              class="w-full px-4 py-3 border-2 border-[#638863]/30 rounded-xl bg-[#f0f4f0] focus:outline-none focus:ring-2 focus:ring-[#2c5e2c] transition duration-300"
+            ></textarea>
+          </div>
+          <button 
+            type="submit" 
+            onclick="window.location.href='profile.html'; return false;"
+            class="w-full bg-[#2c5e2c] text-white py-3 rounded-xl hover:bg-[#1e421e] transition duration-300 shadow-md hover:shadow-lg"
+          >
+           Send message
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
